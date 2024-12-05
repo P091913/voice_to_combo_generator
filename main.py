@@ -1,11 +1,14 @@
 import sys
 from Modules.record_voice import *
+from Modules.convert_sound import *
 import time
 
 def main():
     option = grab_action()
     if option:
-        voice()
+        valid_recording = voice()
+        if valid_recording:
+            convert_sound_text()
     else:
         sys.exit()
 

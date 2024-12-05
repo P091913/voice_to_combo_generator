@@ -35,3 +35,5 @@ def voice():
     write("recordings/output.wav", samplerate, np.array(audio_data, dtype=np.float32))
 
     print("Audio saved as 'recordings/output.wav'")
+
+    return True
